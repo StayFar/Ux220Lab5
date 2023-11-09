@@ -22,3 +22,12 @@ class YearElement extends HTMLElement{
 }
 
 customElements.define("x-fullyear",YearElement);
+
+class PurpleElement extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `<div style="color:purple">${this.innerHTML}</div>
+        `; 
+    }
+}
+
+customElements.define("x-purple",PurpleElement);
